@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hero Section with Solutions</title>
+  <title>crayond replica</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .product-team-solution-section {
@@ -12,8 +12,8 @@
 }
 
 .product-team-solution-section .heading-label {
-  font-weight: 600;
-  font-size: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
@@ -27,7 +27,7 @@
   padding: 12px 16px;
   border-radius: 8px;
   margin-bottom: 12px;
-  border: 1px solid #2c294d;
+  border: 1px solid #58557d;
   color: #ffffff;
 }
 
@@ -77,7 +77,7 @@
     }
     .heading-label {
       font-weight: bold;
-      font-size: 1.25rem;
+      font-size: 1.30rem;
       margin-bottom: 1rem;
     }
 
@@ -128,7 +128,7 @@
 }
 
 .fixed-bid-section {
-  background-color: #1d1b32;
+  background-color: #3a3384;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -175,6 +175,76 @@
     padding: 0 4px;
     border-radius: 4px; 
   }
+  .container, 
+.custom-wrapper {
+  max-width: 1140px;  /* or 1200px, or any width that matches your design */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;  /* optional */
+  padding-right: 15px; /* optional */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* Custom pastel background colors */
+.bg-light-green {
+  background-color: #e9f8f1;
+}
+.bg-light-orange {
+  background-color: #fff3e6;
+}
+.bg-light-purple {
+  background-color: #f7edfd;
+}
+
+/* Slightly stronger text colors for numbers */
+.text-light-green-strong {
+  color: #1abc9c;
+}
+.text-light-orange-strong {
+  color: #f39c12;
+}
+.text-light-purple-strong {
+  color: #9b59b6;
+}
+
+/* Notch-like side effect using pseudo elements */
+.rounded-4 {
+  border-radius: 1rem;
+  position: relative;
+}
+
+.rounded-4::before,
+.rounded-4::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  width: 10px;
+  height: 50px;
+  background-color: white;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.rounded-4::before {
+  left: -3px;
+}
+
+.rounded-4::after {
+  right: -3px;
+}
+
+
+
+
   .bg-purple { background-color: #f3ebff; }
   .bg-orange { background-color: #fff1db; }
   .bg-pink   { background-color: #ffeaf6; }
@@ -187,27 +257,51 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 ">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="brands/logo.jpeg" alt="Logo" height="30" class="me-2">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav align-items-center">
-        <li class="nav-item"><a class="nav-link" href="https://www.crayond.com/fixed-bid">Fixed Bid</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.crayond.com/who-we-are">Who We Are</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.crayond.com/">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.crayond.com/contact">Contact</a></li>
-        <li class="nav-item ms-2">
-          <a href="#" class="btn btn-outline-primary">Schedule a Call</a>
-        </li>
-      </ul>
+    <div class="d-flex w-100 align-items-center justify-content-between">
+
+      <!-- Left group: logo + nav items -->
+<div class="d-flex align-items-center" style="margin-left: 20px;"> <!-- ⬅ Increase value here -->
+        <a class="navbar-brand me-4" href="#">
+          <img src="brands/logo.jpeg" alt="Logo" width="134px">
+        </a>
+
+
+
+        <div style="width: 110px;"></div>  <!-- adjust width to your desired gap -->
+
+
+        <!-- Nav items -->
+        <div class="collapse navbar-collapse show" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="https://www.crayond.com/fixed-bid"><h6>Fixed Bid</h6></a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="https://www.crayond.com/who-we-are">Who We Are</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="https://www.crayond.com/">Resources</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="https://www.crayond.com/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right side: SCHEDULE A CALL button -->
+      <div>
+        <a href="#" class="btn btn-outline-primary">SCHEDULE A CALL</a>
+      </div>
+
     </div>
   </div>
 </nav>
+
+
+<div style="height: 60px;"></div>  <!-- adjust width to your desired gap -->
 
 <!-- Hero Section -->
 <section class="py-5">
@@ -230,7 +324,12 @@
           <a href="#" class="btn btn-primary px-4">View Plans</a>
           <a href="#" class="btn btn-outline-primary px-4">Schedule a Call</a>
         </div>
-        <div class="mt-5">
+        <div class="mt-5 text-center">
+          <div style="width: 100%; overflow: hidden; margin-top: 1rem;">
+    <img src="heroSection_1.svg" alt="Illustration" style="width: 100%; max-height: 280px; height: auto; display: block;">
+
+
+
   <img src="WhatsApp Image 2025-05-27 at 9.52.46 AM.jpeg" alt="Illustration" height="10px" width="30px"class="img-fluid w-100 d-block">
 </div>
       </div>
@@ -239,6 +338,7 @@
 </section>
 
 <!-- Trusted Brands -->
+
 <div class="row g-4 justify-content-center">
       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
         <img src="brands/brands/Chennai_Super_Kings_Logo.svg.png"
@@ -309,7 +409,9 @@
         <img src="brands/brands/15_colabo.png" alt="Health Circles" class="img-fluid mx-auto d-block brand-logo" />
       </div>
     </div>
+    
     <br>
+    <div style="height: 20px;"></div> 
 
 <!-- Problem-Solution Section -->
 <section class="product-team-solution-section py-5 text-center">
